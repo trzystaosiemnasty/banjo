@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Banjo - Your Game List</title>
+</head>
+<body>
+<div th:each="score : ${list.scores}">
+    <span th:text="${score.game.title}"></span>
+    <span th:text="${score.score}"></span>
+</div>
+</body>
+</html>
